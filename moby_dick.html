@@ -18,15 +18,16 @@
     <ul> creates an unordered list, which is a list of bullet points and uses the li tag as well for each bullet point.
     -->
 
-    <div>
+    <div style="text-align: right;">
       <a href="index.html">Home</a>
-      <a href="moby_dick.html">Moby Dick</a>
-      <a href="tags.html">HTML Tags</a>
+      <a href="moby_dick.html" style="margin: 0 0 0 10px;">Moby Dick</a>
+      <a href="tags.html" style="margin: 0 0 0 10px;">HTML Tags</a>
     </div>
     
+    <!-- Another styling example below. text-align allows text to align to a side or to the center. Margin is also shown below -->
     <header>
-      <h1>A Softcover Book Report</h1>
-      <h2>Moby-Dick (or, The Whale)</h2>
+      <h1 style="text-align: center; margin-bottom: 80px">A Softcover Book Report</h1>
+      <h2 style="text-align: center;">Moby-Dick (or, The Whale)</h2>
     </header>
 
     <div>
@@ -44,16 +45,19 @@
     </div>
 
     <a href="https://commons.wikimedia.org/wiki/File:Sperm_whale_pod.jpg">
-      <img src="Pictures/sperm_whales.jpg">
+      <img src="Pictures/sperm_whales.jpg" style="display: block; margin: 0 auto;">
     </a>
 
-    <div>
+    <!-- Good showcase of how good styles are here and the changes they make. Padding pushes the content inside away from the edges. -->
+    <div style="width: 500px; margin: 20px auto; padding: 30px; background-color: #fafafa;">
 
       <h3>Moby-Dick: A classic tale of the sea</h3>
 
       <a href="https://www.softcover.io/read/6070fb03/moby-dick"
          target="_blank" rel="noopener">
-        <img src="Pictures/moby_dick.png" alt="Moby Dick">
+
+         <!-- Below is an example of styling a picture. height or width can be used to set the maximum pixel size for a picture (do not use both at same time). float allows for text to flow around an image (can do left or right, no center). Now to add space next to an image so text isnt smashed up to it, we can use margin (other options like padding and borders also exist). You can specify specific margin values for each direction, in the order: top, right, bottom, left (can also use margin-direction) (Can also use 2 values for margins margin: 20px 40px would put margin 20px for top and bottom and left and right at 40px). Another margin trixk is to use margin: auto which insets a margin with size automatically same on all side, so like margin: 0 auto would have no top/bottom margins, but auto margin for left/right which can be used to center images (this only works on block elements). So to work with images, can use display: block so it acts like a block element-->
+        <img src="Pictures/moby_dick.png" alt="Moby Dick" height="200px" style="float: left; margin: 0 40px 0 0;">
       </a>
 
       <p>
@@ -63,9 +67,12 @@
           by Herman Melville begins with these immortal words:
       </p>
 
-      <blockquote>
+      <!-- Below is an example of styling. style can change the font style and the font size -->
+      <blockquote style="font-style: italic; font-size: 20px;">
         <p>
-          <span>Call me Ishmael.</span> Some years ago–never mind how long
+          <!-- Below is another example of styling. Span allows for a span of text to be stylized. font-style normal gets rid of the italics from the blockquote style. font-weight allows bold to occur. Color allows for colorized text based of hex values. Below is for red and can also just do color: red-->
+          <span style="font-style: normal; font-size: 24px; font-weight: bold;
+          color: #ff0000;">Call me Ishmael.</span> Some years ago–never mind how long
           precisely–having little or no money in my purse, and nothing
           particular to interest me on shore, I thought I would sail about a
           little and see the watery part of the world. It is a way I have of
